@@ -4,6 +4,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const compression = require("compression");
+const path = require("path");
 const PORT = process.env.PORT || 3000;
 
 mongoose.connect(process.env.MONGODB_CLOUD);
@@ -26,7 +27,7 @@ app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
-app.use(express.static("views"));
+app.set("views", path.join(__dirname, "./views"));
 
 app.use(compression());
 
