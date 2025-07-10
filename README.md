@@ -37,3 +37,7 @@ A simple and intuitive To-Do List web application that helps users manage daily 
 5. To develop:
    ```bash
    npm run dev
+## 🌐 Live Demo
+
+Check out the live deployed version here:  
+🔗 [View To-Do List App](https://todo-list-virid-eight-22.vercel.app/)
