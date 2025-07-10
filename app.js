@@ -17,8 +17,8 @@ const listSchema = new mongoose.Schema({
   items: [itemSchema]
 });
 
-const Item = mongoose.model("Item", itemSchema);
-const List = mongoose.model("List", listSchema);
+const Item = mongoose.models.Item || mongoose.model("Item", itemSchema);
+const List = mongoose.models.List || mongoose.model("List", listSchema);
 
 const app = express();
 
