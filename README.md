@@ -10,7 +10,8 @@ A simple and intuitive To-Do List web application that helps users manage daily 
 
 ## 📸 Screenshots
 
-*(Include screenshots of the app here if available)*
+![Screenshot](screenshot/Todo%20List.png)
+
 
 ## 🛠️ Tech Stack
 
