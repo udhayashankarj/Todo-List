@@ -24,6 +24,7 @@ A simple and intuitive To-Do List web application that helps users manage daily 
 1. Clone the repository:
    ```bash
    git clone https://github.com/udhayashankarj/Todo-List.git
+   cd Todo-List
 2. Install necessary pacakges:
    ```bash
    npm install

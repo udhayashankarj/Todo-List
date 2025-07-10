@@ -114,9 +114,10 @@ app.get("/:listName", async (req, res) => {
 app.get("/about", (req, res) => {
   res.render("about");
 });
-
-app.listen(PORT, () => {
-  console.log("Server is running on http://localhost:" + PORT);
-});
+if (process.env.IS_VERCEL==="false") {
+  app.listen(PORT, () => {
+    console.log(`Server is running at http://localhost:${PORT}`);
+  });
+}
 // Export the app for deployment
 module.exports = app;
